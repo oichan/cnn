@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
 
-""" Convolutional network applied to CIFAR-10 dataset classification task.
-References:
-    Learning Multiple Layers of Features from Tiny Images, A. Krizhevsky, 2009.
-Links:
-    [CIFAR-10 Dataset](https://www.cs.toronto.edu/~kriz/cifar.html)
-"""
 from __future__ import division, print_function, absolute_import
 
 import tflearn
@@ -26,21 +20,6 @@ from tflearn.datasets import cifar10
 X, Y = shuffle(X, Y)
 Y = to_categorical(Y, 10)
 Y_test = to_categorical(Y_test, 10)
-print ("X:")
-print (type(X))
-print (X)
-print ("Y:")
-print (type(Y))
-print (Y)
-print ("X_test:")
-print (X_test)
-print ("Y_test:")
-print (Y_test)
-print ("original")
-print (type(X_test[0][0][0][0]))
-print (type(X_test))
-print (type(Y_test[0][0]))
-print (type(Y_test))
 '''
 #自作データ読込み
 dic={"B":"0","C":"1","D":"2","E":"3"}
